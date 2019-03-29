@@ -16,7 +16,7 @@ from random import randint
 from discord import Permissions
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix=('echo ', '-'),
+bot = commands.Bot(command_prefix=('echo ', '$'),
           description= 'Hi I am **Echo**!\n\n**Echo** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/SfEVnnn')
                    
 #bot.remove_command('help')
