@@ -43,7 +43,7 @@ async def on_message(message):
         await bot.send_message(message.channel, msg)
 
     if 'who are you' in message.content.lower():
-        msg = 'I am Echo Bot.'.format(message)
+        msg = 'I am Gorkhali Blood Bot.'.format(message)
         await bot.send_message(message.channel, msg)
     
     if 'good afternoon' in message.content.lower():
@@ -75,7 +75,7 @@ async def on_message(message):
             msg_to_send = 10
             while msg_to_send > 0:
                 msg_to_send = msg_to_send - 1
-                msg = '''I am Echo Bot.'''.format(message)
+                msg = '''I am Gorkhali Blood Bot.'''.format(message)
                 await bot.send_message(message.channel, msg)
                 await asyncio.sleep(1)
             return
@@ -89,7 +89,7 @@ async def on_message(message):
             msg = 'Good night {0.author.mention}. Sweet dreams! :hugging: '.format(message)
             await bot.send_message(message.channel, msg)
         if 'help' in message.content.lower():
-            msg = 'Send **`$help`** to see the available commands.'
+            msg = 'Send **`-help`** to see the available commands.'
             await bot.send_message(message.channel, msg)
         
         if 'khaja' in message.content.lower():
@@ -135,7 +135,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-    await bot.change_presence(game=discord.Game(name="EchoZONE server", type=3))
+    await bot.change_presence(game=discord.Game(name="Gorkhali Blood server", type=3))
 
 @bot.event
 async def on_member_join(member):
