@@ -200,7 +200,7 @@ async def punch(user):
           
 @bot.command()
 async def headpat(user):
-          """ You Get Headpats By User"
+          """ You Get Headpats By User"""
          await bot.say(" You Got Headpats! "+ user " :heart: ")
 
 bot.run(os.environ['BOT_TOKEN'])
