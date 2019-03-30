@@ -191,7 +191,7 @@ async def jiugare(user):
 @bot.command()
 async def kiss(user):
           """It Gives A Kiss to mentioned user"""
-          await bot.say(" Wadu hek! " " :see_no_evil:" )
+          await bot.say(" What did i just see! " " :see_no_evil:" )
  
 @bot.command()
 async def punch(user):
