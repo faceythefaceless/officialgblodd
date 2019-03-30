@@ -188,4 +188,9 @@ async def jiugare(user):
         """It Gives Respect to mentioned user"""
         await bot.say("Jiu Gare Hai!, La Khai Ashirwad Pani Dinu "+ user + " :heart: ")                                                                                                                                                                     
 
+@bot.command()
+async def kiss(user):
+          """It Gives A Kiss to mentioned user"""
+          await bot.say("Lemme Kiss Ya "+ user + " :kiss: "
+          
 bot.run(os.environ['BOT_TOKEN'])
