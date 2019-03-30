@@ -184,7 +184,8 @@ async def coinflip():
           await bot.say(rancoin)
           
 @bot.command()
-async def jiugare():
-          await bot.say("Jiu Gare Hai!")
+async def jiugare(user):
+        """It Gives Respect to mentioned user"""
+        await bot.say("Jiu Gare Hai!, La Khai Ashirwad Pani Dinu "+ user + " :heart: ")
           
 bot.run(os.environ['BOT_TOKEN'])
