@@ -170,7 +170,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <user>`**: Gives Respect To the user (Neplai language)\n**`-kiss`**: kisses a user\n**`-slap <mention user>`**: Slaps A User\n**`-meme <mention user>`**: Makes Fun Of The User mentioned")
+    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <user>`**: Gives Respect To the user (Neplai language)\n**`-kiss`**: kisses a user")
 
 @bot.command()
 async def greet(user):
@@ -197,15 +197,5 @@ async def kiss(user):
 async def punch(user):
           """ It Punches A User"""
           await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
-          
- @bot.command()
-async def slap(user):
-          """It Slaps A User"""
-          await bot.say(" You Got Slapped! "+ user " :dizzy_face: ")
-          
-@bot.command()
-async def meme(user):
-          """ Makes Fun Of User"""
-          await bot.say(" No Need To Make **MEME** Because "+ user + " Looks like **MEME** Him/Her Self! " + " :joy: ")
-          
+                 
 bot.run(os.environ['BOT_TOKEN'])
