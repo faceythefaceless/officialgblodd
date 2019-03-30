@@ -128,9 +128,7 @@ async def on_message(message):
         if 'hate' in message.content.lower():
             msg = 'No, I love you, {0.author.mention} :cry: :hugging: '.format(message)
             await bot.send_message(message.channel, msg)
-        if 'greet' in message.content.lower():
-            msg = 'Hello {0.author.mentiom} :hugging: '.format(message)
-            await bot.send_message(message.channel, msg)        
+               
 
 @bot.event
 async def on_ready():
