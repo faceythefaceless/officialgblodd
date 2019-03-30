@@ -180,7 +180,6 @@ async def greet(user):
           
 @bot.command()
 async def coinflip():
-          """ Flips A Coin"""
           choices = ["Heads", "Tails"]
           rancoin = random.choice(choices)
           await bot.say(rancoin)
