@@ -163,7 +163,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User")
+    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User")
 
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
@@ -200,5 +200,10 @@ async def slap(ctx, member: discord.Member):
 async def hug(ctx, member: discord.Member):
     """Hugs someone."""
     await bot.say("{1} Hugged {0}! :hugging:".format(member.mention, ctx.message.author.mention))
+
+@bot.command(pass_context=True)
+async def headpat(ctx, member: discord.Member):
+    """Hugs someone."""
+    await bot.say("{1} Headpatted {0}! :hugging:".format(member.mention, ctx.message.author.mention))
           
 bot.run(os.environ['BOT_TOKEN'])
