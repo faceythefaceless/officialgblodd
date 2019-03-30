@@ -205,5 +205,10 @@ async def hug(ctx, member: discord.Member):
 async def headpat(ctx, member: discord.Member):
     """Hugs someone."""
     await bot.say("{1} Headpatted {0}! :hugging:".format(member.mention, ctx.message.author.mention))
+
+@@bot.command(pass_context=True)
+async def stare(ctx, member: discord.Member):
+    """Hugs someone."""
+    await bot.say("{1} Stared at {0}! :eyes:".format(member.mention, ctx.message.author.mention))    
           
 bot.run(os.environ['BOT_TOKEN'])
