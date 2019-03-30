@@ -170,6 +170,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
+          """Displays The Commands"""
     await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <user>`**: Gives Respect To the user (Neplai language)\n**`-kiss <mention user>`**: kisses a user")
 
 @bot.command()
@@ -179,6 +180,7 @@ async def greet(user):
           
 @bot.command()
 async def coinflip():
+          """ Flips A Coin"""
           choices = ["Heads", "Tails"]
           rancoin = random.choice(choices)
           await bot.say(rancoin)
