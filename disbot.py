@@ -191,11 +191,10 @@ async def punch(user):
           """It Punches A User"""
           await bot.say("You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
           
-@bot.command()
-async def slap(user):
-          """It Slaps A User"""
-          await bot.say("You Got Slapped! "+ user + " :cry: :dizzy_face: ")
+@bot.command(pass_context=True)
+async def slap(ctx, member: discord.Member):
+    """Slap someone."""
+    await bot.say("{1} slaps {0}!".format(member.name, ctx.message.author.name))
+
           
-
-
 bot.run(os.environ['BOT_TOKEN'])
