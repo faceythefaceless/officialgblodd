@@ -199,6 +199,6 @@ async def slap(user):
 @bot.command()
 async def hug(user):
           """It Hugs The User"""
-          await bot.say(+ user + "Got Hugged! " + " :hugging: ")
+          await bot.say("Wow! You Got Hugged! "+ user " :hugging: ")
 
 bot.run(os.environ['BOT_TOKEN'])
