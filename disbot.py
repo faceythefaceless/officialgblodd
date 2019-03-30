@@ -191,6 +191,6 @@ async def jiugare(user):
 @bot.command()
 async def kiss(user):
           """It Gives A Kiss to mentioned user"""
-          await bot.say("Lemme Kiss Ya "+ user + " :kiss: "
+          await bot.say("Lemme Kiss Ya "+ user + " :kiss: ")
           
 bot.run(os.environ['BOT_TOKEN'])
