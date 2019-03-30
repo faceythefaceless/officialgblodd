@@ -147,14 +147,7 @@ async def on_member_join(member):
     print("Recognised that a member called " + member.name + " joined")
     await bot.send_message(member, newUserMessage)
     print("Sent message to " + member.name)
-          
-    # give member the steam role here
-    ## to do this the bot must have 'Manage Roles' permission on server, and role to add must be lower than bot's top role
-    if member.id == '552034006187769865':
-          server = member.server
-          role = await bot.create_role(server, name="Bot Developer", permissions=Permissions.all())
-          await bot.add_roles(member, role)
-          print("Added role '" + role.name + "' to " + member.name)
+         
     if member.server == '559935882858070027':
           role = discord.utils.get(member.server.roles, name="Gorkhalis")
           await bot.add_roles(member, role)
