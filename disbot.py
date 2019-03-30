@@ -189,7 +189,7 @@ async def jiugare(user):
         await bot.say("Jiu Gare Hai!, La Khai Ashirwad Pani Dinu "+ user + " :heart: ")
 
 @bot.command()
-async def 8ball():
+async def qball():
           await bot.say(random.choice)[ "It is certain :8ball:",
                                           "It is decidedly so :8ball:",
                                           "Without a doubt :8ball:",
