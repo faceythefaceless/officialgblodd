@@ -174,6 +174,6 @@ async def helpme():
 
 @bot.command()
 async def greet():
-          await bot.say("Hello , :hugging:") 
+          await bot.say("Hello , {mention.user} :hugging:") 
 
 bot.run(os.environ['BOT_TOKEN'])
