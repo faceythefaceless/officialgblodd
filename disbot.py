@@ -168,7 +168,7 @@ async def helpme():
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
     """Greets someone."""
-    await bot.say("{1} Greeted {0}!, :hugging:".format(member.mention, ctx.message.author.mention)) 
+    await bot.say("{1} Hello, I Was Waiting For You {0}!, :hugging:".format(member.mention, ctx.message.author.mention)) 
           
 @bot.command()
 async def coinflip():
