@@ -176,20 +176,20 @@ async def coinflip():
           rancoin = random.choice(choices)
           await bot.say(rancoin)
           
-@bot.command()
-async def jiugare(user):
-        """It Gives Respect to mentioned user"""
-        await bot.say("Jiu Gare Hai!, La Khai Ashirwad Pani Dinu "+ user + " :heart: ")                                                                                                                                                                     
+@bot.command(pass_context=True)
+async def jiugare(ctx, member: discord.Member):
+    """Slaps someone."""
+    await bot.say("{1} did jiu to {0}! Khoi Tw Ashirwad?".format(member.mention, ctx.message.author.mention))                                                                                                                                                                  
 
-@bot.command()
-async def kiss(user):
-          """It Gives A Kiss to mentioned user"""
-          await bot.say("What did i just see! " " :see_no_evil:" )
+@bot.command(pass_context=True)
+async def kiss(ctx, member: discord.Member):
+    """Kisses someone."""
+    await bot.say("{1} Kissed {0}!".format(member.mention, ctx.message.author.mention))
  
-@bot.command()
-async def punch(user):
-          """It Punches A User"""
-          await bot.say("You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
+@bot.command(pass_context=True)
+async def punch(ctx, member: discord.Member):
+    """Punches someone."""
+    await bot.say("{1} Punches {0}!".format(member.mention, ctx.message.author.mention))
           
 @bot.command(pass_context=True)
 async def slap(ctx, member: discord.Member):
