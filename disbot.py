@@ -198,9 +198,5 @@ async def punch(user):
           """ It Punches A User"""
           await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
           
- @bot.command()
-async def love(user):
-          """It says i love you to the user"""
-          await bot.say(" I Love You! "+ user + " :heart: ")
                        
 bot.run(os.environ['BOT_TOKEN'])
