@@ -184,11 +184,16 @@ async def jiugare(user):
 @bot.command()
 async def kiss(user):
           """It Gives A Kiss to mentioned user"""
-          await bot.say(" What did i just see! " " :see_no_evil:" )
+          await bot.say("What did i just see! " " :see_no_evil:" )
  
 @bot.command()
 async def punch(user):
-          """ It Punches A User"""
-          await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
-                                              
+          """It Punches A User"""
+          await bot.say("You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
+          
+@bot.command()
+async def slap(user):
+          """It Slaps A User"""
+          await bot.say("You Got Slapped! "+ user + " :cry: :dizzy_face: ")
+
 bot.run(os.environ['BOT_TOKEN'])
