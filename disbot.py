@@ -189,6 +189,6 @@ async def kiss(user):
 @bot.command()
 async def punch(user):
           """ It Punches A User"""
-          await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  "
+          await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
                                               
 bot.run(os.environ['BOT_TOKEN'])
