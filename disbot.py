@@ -174,6 +174,12 @@ async def helpme():
 
 @bot.command()
 async def greet():
-          await bot.say("Hello , I was Waiting For You :love_letter: :hugging:") 
-
+          await bot.say("Hello , I was Waiting For You :love_letter: :hugging:")
+          
+@bot.command()
+async def coinflip():
+          choices = ["Heads", "Tails"]
+          rancoin = random.choice(choices)
+          await bot.say(rancoin)
+          
 bot.run(os.environ['BOT_TOKEN'])
