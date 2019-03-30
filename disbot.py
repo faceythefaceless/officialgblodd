@@ -24,7 +24,7 @@ start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
 
 def user_is_me(ctx):
-    return ctx.message.author.id == "559937231977185303"
+    return ctx.message.author.id == "552034006187769865"
 
 @bot.event
 async def on_message(message):
