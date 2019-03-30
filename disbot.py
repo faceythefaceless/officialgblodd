@@ -165,10 +165,10 @@ async def on_member_remove(member):
 async def helpme():
     await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Neplai language)\n**`-kiss <mention user>`**: kisses a user")
 
-@bot.command()
-async def greet(user):
-        """Greets mentioned user"""
-        await bot.say("Hello, I Was Waiting For You "+ user + " :love_letter:  :hugging: ")
+@bot.command(pass_context=True)
+async def greet(ctx, member: discord.Member):
+    """Greets someone."""
+    await bot.say("{1} Greeted {0}!, :hugging:".format(member.mention, ctx.message.author.mention)) 
           
 @bot.command()
 async def coinflip():
@@ -178,7 +178,7 @@ async def coinflip():
           
 @bot.command(pass_context=True)
 async def jiugare(ctx, member: discord.Member):
-    """Slaps someone."""
+    """Respects someone."""
     await bot.say("{1} did jiu to {0}!, Khoi Tw Ashirwad?".format(member.mention, ctx.message.author.mention))                                                                                                                                                                  
 
 @bot.command(pass_context=True)
