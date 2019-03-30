@@ -197,5 +197,10 @@ async def kiss(user):
 async def punch(user):
           """ It Punches A User"""
           await bot.say(" You Got Punched In Face! "+ user + " :punch: :dizzy_face:  ")
+          
+@bot.command()
+async def headpat(user):
+          """ You Get Headpats By User"
+         await bot.say(" You Got Headpats! "+ user " :heart: ")
 
 bot.run(os.environ['BOT_TOKEN'])
