@@ -189,8 +189,8 @@ async def jiugare(user):
         await bot.say("Jiu Gare Hai!, La Khai Ashirwad Pani Dinu "+ user + " :heart: ")
 
 @bot.event()
-async def 8ball():         
-          await bot.send_message(message.channel, random.choice(["""It is certain :8ball:",
+async def qball():         
+          await bot.send_message(message.channel, random.choice(["It is certain :8ball:",
                                                                    "It is decidedly so :8ball:",
                                                                    "Without a doubt :8ball:",
                                                                    "Yes, definitely :8ball:",
@@ -209,7 +209,7 @@ async def 8ball():
                                                                    "My reply is no :8ball:",
                                                                    "My sources say no :8ball:",
                                                                    "Outlook not so good :8ball:"
-                                                                   "Very doubtful :8ball:"""]))                                            
+                                                                   "Very doubtful :8ball:"]))                                            
                                                                      
                                                                      
 
