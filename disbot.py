@@ -172,4 +172,8 @@ async def on_member_remove(member):
 async def helpme():
     await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mention user>`**: Greets user\n**`-cb <question>`**: Ask question to Crystal Ball\n**`-dice`**: Rolls a dice\n**`-dhoga <user>`**: Makes fun of user mentioned or the one who mentions\n**`-flips`**: Flips a coin\n**`-punch <mention user>`**: Makes fun of user mentioned\n**`-square <number>`**: Finds the square of the given number\n**`-uptime`**: Displays how long the bot has been online for")
 
+@bot.command()
+async def greet():
+          await bot.say("Hello , {0.author.mention} :hugging:")
+
 bot.run(os.environ['BOT_TOKEN'])
