@@ -183,7 +183,7 @@ async def coinflip():
           await bot.say(rancoin)
           
 @bot.command()
-async def jiu gare():
+async def jiugare():
           await bot.say("Jiu Gare Hai!")
           
 bot.run(os.environ['BOT_TOKEN'])
