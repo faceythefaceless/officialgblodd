@@ -211,4 +211,9 @@ async def stare(ctx, member: discord.Member):
     """Hugs someone."""
     await bot.say("{1} Stared at {0}! :eyes:".format(member.mention, ctx.message.author.mention))    
           
+@bot.command(pass_context=True)
+async def love(ctx, member: discord.Member):
+    """Says i love you to someone"""
+    await bot.say("{1} Loves {0}! :heart:".format(member.mention, ctx.message.author.mention))
+          
 bot.run(os.environ['BOT_TOKEN'])
