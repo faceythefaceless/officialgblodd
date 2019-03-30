@@ -39,7 +39,7 @@ async def on_message(message):
     if message.content.startswith("-repeat"):
         await bot.delete_message(message)
     if 'how are you' in message.content.lower():
-        msg = 'I am fine. What about you, {0.author.mention}?'.format(message)
+        msg = 'I am fine, What about you? {0.author.mention}?'.format(message)
         await bot.send_message(message.channel, msg)
 
     if 'who are you' in message.content.lower():
@@ -47,19 +47,19 @@ async def on_message(message):
         await bot.send_message(message.channel, msg)
     
     if 'good afternoon' in message.content.lower():
-        msg = 'Good afternoon {0.author.mention}. Hope you are having a nice day! :hugging: '.format(message)
+        msg = 'Good afternoon {0.author.mention}. Hope you are experiencing a nice day! :hugging: '.format(message)
         await bot.send_message(message.channel, msg)
         
     if 'good evening' in message.content.lower():
-        msg = 'Good evening {0.author.mention}. How was your day? :hugging: '.format(message)
+        msg = 'Good evening {0.author.mention}. How did your day go? :hugging: '.format(message)
         await bot.send_message(message.channel, msg)
         
     if 'good morning' in message.content.lower():
-        msg = 'Good morning {0.author.mention}. Have a nice day! :hugging: '.format(message)
+        msg = 'Good morning {0.author.mention}. Hope you have an awesome day! :hugging: '.format(message)
         await bot.send_message(message.channel, msg)
         
     if 'good night' in message.content.lower():
-        msg = 'Good night {0.author.mention}. Sweet dreams! :hugging: '.format(message)
+        msg = 'Good night, Sweet Dreams {0.author.mention}. Sleep Well! :hugging: '.format(message)
         await bot.send_message(message.channel, msg)
     
     if bot.user.mentioned_in(message) and message.mention_everyone is False:
@@ -80,13 +80,13 @@ async def on_message(message):
                 await asyncio.sleep(1)
             return
         if 'bye' in message.content.lower():
-            msg = 'Bye :wave::skin-tone-1: {0.author.mention}. :hugging: '.format(message)
+            msg = 'Bye Bye , See You Soon :wave::skin-tone-1: {0.author.mention}. :hugging: '.format(message)
             await bot.send_message(message.channel, msg)
         if 'gm' in message.content.lower():
-            msg = 'Good morning {0.author.mention}. Have a nice day! :hugging: '.format(message)
+            msg = 'Good morning {0.author.mention}. Hope you have an awesome day! :hugging: '.format(message)
             await bot.send_message(message.channel, msg)
         if 'gn' in message.content.lower():
-            msg = 'Good night {0.author.mention}. Sweet dreams! :hugging: '.format(message)
+            msg = 'Good night, Sweet Dreams {0.author.mention}. Sleep Well! :hugging: '.format(message)
             await bot.send_message(message.channel, msg)
         if 'help' in message.content.lower():
             msg = 'Send **`-help`** to see the available commands.'
