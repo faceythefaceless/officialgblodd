@@ -179,22 +179,22 @@ async def coinflip():
 @bot.command(pass_context=True)
 async def jiugare(ctx, member: discord.Member):
     """Slaps someone."""
-    await bot.say("{1} did jiu to {0}! Khoi Tw Ashirwad?".format(member.mention, ctx.message.author.mention))                                                                                                                                                                  
+    await bot.say("{1} did jiu to {0}!, Khoi Tw Ashirwad?".format(member.mention, ctx.message.author.mention))                                                                                                                                                                  
 
 @bot.command(pass_context=True)
 async def kiss(ctx, member: discord.Member):
     """Kisses someone."""
-    await bot.say("{1} Kissed {0}!".format(member.mention, ctx.message.author.mention))
+    await bot.say("{1} Kissed {0}! :kiss:".format(member.mention, ctx.message.author.mention))
  
 @bot.command(pass_context=True)
 async def punch(ctx, member: discord.Member):
     """Punches someone."""
-    await bot.say("{1} Punches {0}!".format(member.mention, ctx.message.author.mention))
+    await bot.say("{1} Punched {0}! :punch: :dizzy_face:".format(member.mention, ctx.message.author.mention))
           
 @bot.command(pass_context=True)
 async def slap(ctx, member: discord.Member):
     """Slaps someone."""
-    await bot.say("{1} slaps {0}!".format(member.mention, ctx.message.author.mention))
+    await bot.say("{1} slaps {0}! :dizzy_face:".format(member.mention, ctx.message.author.mention))
 
           
 bot.run(os.environ['BOT_TOKEN'])
