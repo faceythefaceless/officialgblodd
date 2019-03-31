@@ -336,6 +336,6 @@ async def dumb(ctx, member: discord.Member):
 @bot.command(pass_context=True)
 async def ashirwad(ctx, member: discord.Member):
     """Says Ashirwad to A User"""
-    await bot.say("{1} Said , Ashirwad xa Timlai {0}!".format(member.mention, ctx.message.author.mention))  
+    await bot.say("{1} Ashirwad {0}! :raised_hand:".format(member.mention, ctx.message.author.mention))  
           
 bot.run(os.environ['BOT_TOKEN'])
