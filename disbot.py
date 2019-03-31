@@ -163,7 +163,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User")
+    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Says Ashirwad to a user")
 
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
@@ -217,6 +217,113 @@ async def love(ctx, member: discord.Member):
     await bot.say("{1} Loves {0}! :heart:".format(member.mention, ctx.message.author.mention))
           
 @bot.command(pass_context=True)
+183
+​
+184
+@bot.command(pass_context=True)
+185
+async def kiss(ctx, member: discord.Member):
+186
+    """Kisses someone."""
+187
+    await bot.say("{1} Kissed {0}! :kiss:".format(member.mention, ctx.message.author.mention))
+188
+ 
+189
+@bot.command(pass_context=True)
+190
+async def punch(ctx, member: discord.Member):
+191
+    """Punches someone."""
+192
+    await bot.say("{1} Punched {0}! :punch: :dizzy_face:".format(member.mention, ctx.message.author.mention))
+193
+          
+194
+@bot.command(pass_context=True)
+195
+async def slap(ctx, member: discord.Member):
+196
+    """Slaps someone."""
+197
+    await bot.say("{1} slaps {0}! :dizzy_face:".format(member.mention, ctx.message.author.mention))
+198
+          
+199
+@bot.command(pass_context=True)
+200
+async def hug(ctx, member: discord.Member):
+201
+    """Hugs someone."""
+202
+    await bot.say("{1} Hugged {0}! :hugging:".format(member.mention, ctx.message.author.mention))
+203
+​
+204
+@bot.command(pass_context=True)
+205
+async def headpat(ctx, member: discord.Member):
+206
+    """Hugs someone."""
+207
+    await bot.say("{1} Headpatted {0}! :hugging:".format(member.mention, ctx.message.author.mention))
+208
+​
+209
+@bot.command(pass_context=True)
+210
+async def stare(ctx, member: discord.Member):
+211
+    """Hugs someone."""
+212
+    await bot.say("{1} Stared at {0}! :eyes:".format(member.mention, ctx.message.author.mention))    
+213
+          
+214
+@bot.command(pass_context=True)
+215
+async def love(ctx, member: discord.Member):
+216
+    """Says i love you to someone"""
+217
+    await bot.say("{1} Loves {0}! :heart:".format(member.mention, ctx.message.author.mention))
+218
+          
+219
+@bot.command(pass_context=True)
+220
+async def marry(ctx, member: discord.Member):
+221
+    """Get Married to Someone"""
+222
+    await bot.say("{1} Got Married With :ring: {0}! :heart:".format(member.mention, ctx.message.author.mention)) 
+223
+          
+224
+@bot.command(pass_context=True)
+225
+async def dumb(ctx, member: discord.Member):
+226
+    """Says Dumbass to A User"""
+227
+    await bot.say("{1} Said {0} is So Freaking Dumb! :joy:".format(member.mention, ctx.message.author.mention))
+228
+          
+229
+@bot.command(pass_context=True)
+230
+async def ashirwad(ctx, member: discord.Member):
+231
+    """Says Ashirwad to A User"""
+232
+    await bot.say("{1} Said , Ashirwad xa Timlai {0}!".format(member.mention, ctx.message.author.mention))  
+233
+          
+234
+bot.run(os.environ['BOT_TOKEN'])
+235
+​
+
 async def marry(ctx, member: discord.Member):
     """Get Married to Someone"""
     await bot.say("{1} Got Married With :ring: {0}! :heart:".format(member.mention, ctx.message.author.mention)) 
@@ -225,5 +332,10 @@ async def marry(ctx, member: discord.Member):
 async def dumb(ctx, member: discord.Member):
     """Says Dumbass to A User"""
     await bot.say("{1} Said {0} is So Freaking Dumb! :joy:".format(member.mention, ctx.message.author.mention))
+          
+@bot.command(pass_context=True)
+async def ashirwad(ctx, member: discord.Member):
+    """Says Ashirwad to A User"""
+    await bot.say("{1} Said , Ashirwad xa Timlai {0}!".format(member.mention, ctx.message.author.mention))  
           
 bot.run(os.environ['BOT_TOKEN'])
