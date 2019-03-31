@@ -221,4 +221,9 @@ async def marry(ctx, member: discord.Member):
     """Get Married to Someone"""
     await bot.say("{1} Got Married With :ring: {0}! :heart:".format(member.mention, ctx.message.author.mention)) 
           
+@bot.command(pass_context=True)
+async def dumb(ctx, member: discord.Member):
+    """Says Dumbass to A User"""
+    await bot.say("{1} Said {0} is So Freaking Dumb! :joy:".format(member.mention, ctx.message.author.mention))
+          
 bot.run(os.environ['BOT_TOKEN'])
