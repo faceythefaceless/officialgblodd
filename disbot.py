@@ -232,8 +232,8 @@ async def ashirwad(ctx, member: discord.Member):
     await bot.say("{1} Gave Ashirwad to :raised_hand: {0}".format(member.mention, ctx.message.author.mention))
           
 @bot.command(pass_context=True)
-async def 8ball(ctx):
-    """Ask an 8ball Question"""
+async def qball(ctx):
+    """Answers an  Question"""
     await bot.say(random.choice(["It is certain :8ball:",
                                  "It is decidedly so :8ball:",
                                  "Without a doubt :8ball:",
@@ -254,6 +254,5 @@ async def 8ball(ctx):
                                  "My sources say no :8ball:",
                                  "Outlook not so good :8ball:",
                                   "Very doubtful :8ball:"]))
-
           
 bot.run(os.environ['BOT_TOKEN'])
