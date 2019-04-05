@@ -255,4 +255,9 @@ async def qball(ctx):
                                  "Outlook not so good :8ball:",
                                   "Very doubtful :8ball:"]))
           
+@bot.command(pass_context=True)
+async def pranam(ctx, member: discord.Member):
+    """Gets Ashirwad from A User"""
+    await bot.say("{1} Le {0} Lai Pranam Garyo, Ashirwad Pilich!".format(member.mention, ctx.message.author.mention)) 
+          
 bot.run(os.environ['BOT_TOKEN'])
