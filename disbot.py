@@ -262,7 +262,6 @@ async def pranam(ctx, member: discord.Member):
           
 @bot.command()
 async def developer():
-          """Says Whos The Developer"""
-          await bot.say("{1} The Developer Of This Bot Is @Schizo#4562 :tada: , Therefore He Is Only 16 Years Old! :scream:!".format(member.mention))
+     await bot.say("{1} The Developer Of This Bot Is @Schizo#4562 :tada: , Therefore He Is Only 16 Years Old! :scream:!".format(member.mention))
           
 bot.run(os.environ['BOT_TOKEN'])
