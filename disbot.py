@@ -260,4 +260,9 @@ async def pranam(ctx, member: discord.Member):
     """Gets Ashirwad from A User"""
     await bot.say("{1} Le {0} Lai Pranam Garyo, Ashirwad Pilich!".format(member.mention, ctx.message.author.mention)) 
           
+@bot.command(pass_context=True)
+async def developer(ctx, member: discord.Member):
+          """Says Whos The Developer"""
+          await bot.say("{0} The Developer Of This Bot Is @Schizo#4562 :tada: , Therefore He Is Only 16 Years Old! :scream:!".format(member.mention))
+          
 bot.run(os.environ['BOT_TOKEN'])
