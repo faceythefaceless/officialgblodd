@@ -258,6 +258,22 @@ async def qball(ctx):
 @bot.command(pass_context=True)
 async def pranam(ctx, member: discord.Member):
     """Gets Ashirwad from A User"""
-    await bot.say("{1} Le {0} Lai Pranam Garyo, Ashirwad Pilich!".format(member.mention, ctx.message.author.mention)) 
-    
+    await bot.say("{1} Le {0} Lai Pranam Garyo, Ashirwad Pilich!".format(member.mention, ctx.message.author.mention))
+          
+@bot.command(pass_context=True)
+async def insult(ctx, member: discord.Member):
+    """Insults a user"""
+    await bot.say(random.choice(["You speak an infinite deal of nothing :8ball:",
+                                 "Only dull people are brilliant at breakfast :8ball:",
+                                 "You look lousy :8ball:",
+                                 "You're awfully small to be so hugely irritating :8ball:",
+                                 "No I mean it. You don't look good :8ball:",
+                                 "As I see it, you are ugly boi :8ball:",
+                                 "Most likely You're Dumb :8ball:",
+                                 "The only time you seem honest is when you’re insulting someone! :8ball:",
+                                 "You're hair is ridiculous :8ball:",
+                                 "Signs point to yes :8ball:",
+                                 "You ignorant little slug! :8ball:",
+                                 "You spawny-eyed pig-faced wazzock :8ball:"]))
+          
 bot.run(os.environ['BOT_TOKEN'])
