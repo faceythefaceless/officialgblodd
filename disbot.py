@@ -270,5 +270,21 @@ async def insult(ctx, member: discord.Member):
                                  "Signs point to yes :8ball:",
                                  "You ignorant little slug! :8ball:",
                                  "You spawny-eyed pig-faced wazzock :8ball:"]))
-                    
+          
+@bot.command(pass_context=True)
+async def praise(ctx, member: discord.Member):
+    """Praises a user"""
+    await bot.say(random.choice(["You are more fun than anyone or anything I know, including bubble wrap :8ball:",
+                                 "You are the most perfect you there is. :8ball:",
+                                 "You are enough. :8ball:",
+                                 "You are one of the strongest people I know. :8ball:",
+                                 "No I mean it. You don't look good :8ball:",
+                                 "You look great today. :8ball:",
+                                 "You have the best smile. :8ball:",
+                                 "Your outlook on life is amazing. :8ball:",
+                                 "You just light up the room.:8ball:",
+                                 "Everything seems brighter when you are around :8ball:",
+                                 "You really seem to know who you are. I admire that. :8ball:",
+                                 "I tell everyone how amazing you are. :8ball:"]))
+          
 bot.run(os.environ['BOT_TOKEN'])
