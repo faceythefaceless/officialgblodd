@@ -276,4 +276,9 @@ async def insult(ctx, member: discord.Member):
                                  "You ignorant little slug! :8ball:",
                                  "You spawny-eyed pig-faced wazzock :8ball:"]))
           
+@client.event
+async def on_member_join(member):
+    role = discord.utils.get(member.server.roles, name='NVKムCommunity', 'Gorkhalis')
+    await client.add_roles(member, role)
+          
 bot.run(os.environ['BOT_TOKEN'])
