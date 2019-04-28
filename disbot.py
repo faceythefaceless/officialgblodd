@@ -148,8 +148,8 @@ async def on_member_join(member):
     await bot.send_message(member, newUserMessage)
     print("Sent message to " + member.name)
          
-    if member.server == '559935882858070027':
-          role = discord.utils.get(member.server.roles, name="Gorkhalis")
+    if member.server == '554722392631410698':
+          role = discord.utils.get(member.server.roles, name="NVKムCommunity")
           await bot.add_roles(member, role)
           print("Added role '" + role.name + "' to " + member.name)
 
@@ -275,10 +275,5 @@ async def insult(ctx, member: discord.Member):
                                  "Signs point to yes :8ball:",
                                  "You ignorant little slug! :8ball:",
                                  "You spawny-eyed pig-faced wazzock :8ball:"]))
-          
-@client.event
-async def on_member_join(member):
-    role = discord.utils.get(member.server.roles, name='NVKムCommunity', 'Gorkhalis')
-    await client.add_roles(member, role)
-          
+                    
 bot.run(os.environ['BOT_TOKEN'])
