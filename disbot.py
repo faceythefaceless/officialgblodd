@@ -17,7 +17,7 @@ from discord import Permissions
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix=('gblood ', '-'),
-          description= 'Hi I am **Gorkhali Blood**!\n\n**Gorkhali Blodd** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/U9VcvHp')
+          description= 'Hi I am **Gorkhali Bot**!\n\n**Gorkhali Blodd** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/U9VcvHp')
                    
 
 start_time = time.time()
@@ -136,7 +136,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-    await bot.change_presence(game=discord.Game(name="Gorkhali Blood server", type=3))
+    await bot.change_presence(game=discord.Game(name="Gorkhali Server", type=3))
 
 @bot.event
 async def on_member_join(member):
@@ -158,7 +158,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Gorkhali Blood** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User")
+    await bot.say("**Gorkhali Bot** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User")
 
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
