@@ -148,11 +148,6 @@ async def on_member_join(member):
     await bot.send_message(member, newUserMessage)
     print("Sent message to " + member.name)
          
-    if member.server == '554722392631410698':
-          role = discord.utils.get(member.server.roles, name="NVKムCommunity")
-          await bot.add_roles(member, role)
-          print("Added role '" + role.name + "' to " + member.name)
-
 @bot.event
 async def on_member_remove(member):
     for channel in member.server.channels:
@@ -275,5 +270,10 @@ async def insult(ctx, member: discord.Member):
                                  "Signs point to yes :8ball:",
                                  "You ignorant little slug! :8ball:",
                                  "You spawny-eyed pig-faced wazzock :8ball:"]))
-                    
+          
+@bot.event
+async def on_member_join(member):
+    role = discord.utils.get(member.server.roles, name='NVKムCommunity')
+    await client.add_roles(member, role)
+          
 bot.run(os.environ['BOT_TOKEN'])
