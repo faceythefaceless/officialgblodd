@@ -199,7 +199,7 @@ async def hug(ctx, member: discord.Member):
 @bot.command(pass_context=True)
 async def headpat(ctx, member: discord.Member):
     """Hugs someone."""
-    await bot.say("{1} Headpatted {0}! :hugging:".format(member.mention, ctx.message.author.mention))
+    await bot.say("{1} Headpatted {0}! :hugging: https://tenor.com/view/anime-pet-gif-9200932".format(member.mention, ctx.message.author.mention))
 
 @bot.command(pass_context=True)
 async def stare(ctx, member: discord.Member):
