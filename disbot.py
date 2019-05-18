@@ -136,7 +136,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-    await bot.change_presence(game=discord.Game(name="Gorkhali Server", type=3))
+    await bot.change_presence(game=discord.Game(name="Mr.Noah Calls", type=3))
 
 @bot.event
 async def on_member_join(member):
@@ -151,7 +151,7 @@ async def on_member_join(member):
 @bot.event
 async def on_member_remove(member):
     for channel in member.server.channels:
-        if 'welcome' in channel.name:
+        if 'bye' in channel.name:
             await bot.send_message(channel, '**' + member.mention + '** just left.')
     print("Recognized that " + member.name + " left")
     print("Sent message to #CHANNEL")
