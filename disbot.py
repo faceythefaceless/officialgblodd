@@ -298,5 +298,8 @@ async def nvkhelp():
 @bot.command()
 async def nvkyt():
           await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK厶Noah :__**\nhttps://www.youtube.com/channel/UC_9XSNPo8OPDgjhiEu9nKXA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/w7VDRZ5")
+@bot.command()
+async def nvkdiscord():
+          await bot.say("```**__The Link Of NepViking's Discord Is :__**\n\nhttps://discord.gg/w7VDRZ5")
           
 bot.run(os.environ['BOT_TOKEN'])
