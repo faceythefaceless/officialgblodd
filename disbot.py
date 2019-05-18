@@ -16,7 +16,7 @@ from random import randint
 from discord import Permissions
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix=('nvk!', 'n$'),
+bot = commands.Bot(command_prefix=('nvk! ', 'n$'),
           description= 'Hi I am **Mr.Noah**!\n\n**Mr.Noah** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5')
                    
 start_time = time.time()
