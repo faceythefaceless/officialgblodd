@@ -16,7 +16,7 @@ from random import randint
 from discord import Permissions
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix=('nvk! ', 'noah!'),
+bot = commands.Bot(command_prefix=('nvk! ', 'n$'),
           description= 'Hi I am **Mr.Noah**!\n\n**Mr.Noah** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5')
                    
 start_time = time.time()
@@ -285,5 +285,8 @@ async def praise(ctx, member: discord.Member):
                                  "Everything seems brighter when you are around :8ball:",
                                  "You really seem to know who you are. I admire that. :8ball:",
                                  "I tell everyone how amazing you are. :8ball:"]))
-                 
+@bot.command()
+async def requirements():
+    await bot.say("**Mr.Noah** can talk to you!")
+
 bot.run(os.environ['BOT_TOKEN'])
