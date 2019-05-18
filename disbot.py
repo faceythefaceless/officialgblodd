@@ -294,6 +294,6 @@ async def roster():
           await bot.say("```The following are the members of NepVikings (NVK) :- \n01. NVKムMETALHEAD(Leader)\n02. NVKムAlex\n03. NVKムBhupoo\n04. NVKムNishant69\n05. NVKムPrerak\n06. NVKムCaptain\n07. NVKムAdolfin\n08. NVKムPRABAL\n09. NVKムSaniz\n10. NVKムNithean\n11. NVKムSarvesh\n12. NVKムMilann\n13. NVKムpraJWaL\n14. NVKムHellRaiser \n15. NVKムHuncho```")
 @bot.command()
 async def nvkhelp():
-          await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n**`nvkhelp`**: Shows help Command of NepVikings\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5")
           
 bot.run(os.environ['BOT_TOKEN'])
