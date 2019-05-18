@@ -287,6 +287,6 @@ async def praise(ctx, member: discord.Member):
                                  "I tell everyone how amazing you are. :8ball:"]))
 @bot.command()
 async def requirements():
-    await bot.say("```**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK) Clan!. Do Not Post Screenshots Of Your Stats If Doesn't Meet The Following Requirements. You Need To Be Active In The Game And Should Be Consistent. You should be respectful to your teammates, and prefer team game over solo kills, and should be loyal.\nIf You Have The Potential To Join NVK DM NVK ム Alex#0186.\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory```")
+    await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n**For More Info You May Join Our Discord Server**\n__**https://discord.gg/w7VDRZ5**__")
 
 bot.run(os.environ['BOT_TOKEN'])
