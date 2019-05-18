@@ -291,6 +291,6 @@ async def requirements():
 
 @bot.command()
 async def roster():
-          await bot.say("```The following are the members of NepVikings (NVK) :- \n01. NVKムMETALHEAD(Leadwe)\n02. NVKムAlex\n03. NVKムBhupoo\n04. NVKムNishant69\n05. NVKムPrerak\n06. NVKムCaptain\n07. NVKムAdolfin\n08. NVKムPRABAL\n09. NVKムSaniz\n10. NVKムNithean\n11. NVKムSarvesh\n12. NVKムMilann\n13. NVKムpraJWaL\n14. NVKムHellRaiser \n15. NVKムHuncho```")
+          await bot.say("```The following are the members of NepVikings (NVK) :- \n01. NVKムMETALHEAD(Leader)\n02. NVKムAlex\n03. NVKムBhupoo\n04. NVKムNishant69\n05. NVKムPrerak\n06. NVKムCaptain\n07. NVKムAdolfin\n08. NVKムPRABAL\n09. NVKムSaniz\n10. NVKムNithean\n11. NVKムSarvesh\n12. NVKムMilann\n13. NVKムpraJWaL\n14. NVKムHellRaiser \n15. NVKムHuncho```")
           
 bot.run(os.environ['BOT_TOKEN'])
