@@ -142,7 +142,7 @@ async def on_ready():
 async def on_member_join(member):
     for channel in member.server.channels:
         if 'welcome' in channel.name:
-            await bot.send_message(channel,'Hey ' + str(member.mention) + ', welcome to **' + str(member.server) + '**! :tada: :hugging: ')
+            await bot.send_message(channel,'Hello There ' + str(member.mention) + ', welcome to **' + str(member.server) + '**! :tada: :hugging: ')
     newUserMessage = 'Hey ' + str(member.mention) +', welcome to **' + str(member.server) + '**!  :tada:  :hugging: '
     print("Recognised that a member called " + member.name + " joined")
     await bot.send_message(member, newUserMessage)
