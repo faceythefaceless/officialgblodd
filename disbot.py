@@ -287,6 +287,6 @@ async def praise(ctx, member: discord.Member):
                                  "I tell everyone how amazing you are. :8ball:"]))
 @bot.command()
 async def requirements():
-    await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n\n__**For More Info You May Join Our Discord Server :**__\n**https://discord.gg/w7VDRZ5**")
+    await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n\n__**For More Info You May Join Our Discord Server :**__\n\n**https://discord.gg/w7VDRZ5**")
 
 bot.run(os.environ['BOT_TOKEN'])
