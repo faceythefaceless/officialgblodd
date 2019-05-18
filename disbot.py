@@ -297,5 +297,6 @@ async def nvkhelp():
           await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n**`nvkhelp`**: Shows help Command of NepVikings\n**`nvkyt`**: Shows The Youtube Channel of NVK Crew Members\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5")
 @bot.command()
 async def nvkyt():
-          await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK厶Noah :__**\nhttps://www.youtube.com/channel/UC_9XSNPo8OPDgjhiEu9nKXA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/w7VDRZ5")
+          
 bot.run(os.environ['BOT_TOKEN'])
