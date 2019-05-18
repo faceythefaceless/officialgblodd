@@ -294,12 +294,12 @@ async def roster():
           await bot.say("```The following are the members of NepVikings (NVK) :- \n01. NVKムMETALHEAD(Leader)\n02. NVKムAlex\n03. NVKムBhupoo\n04. NVKムNishant69\n05. NVKムPrerak\n06. NVKムCaptain\n07. NVKムAdolfin\n08. NVKムPRABAL\n09. NVKムSaniz\n10. NVKムNithean\n11. NVKムSarvesh\n12. NVKムMilann\n13. NVKムpraJWaL\n14. NVKムHellRaiser \n15. NVKムHuncho```")
 @bot.command()
 async def nvkhelp():
-          await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n**`nvkhelp`**: Shows help Command of NepVikings\n**`nvkyt`**: Shows The Youtube Channel of NVK Crew Members\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n**`nvkhelp`**: Shows help Command of NepVikings\n**`nvkyt`**: Shows The Youtube Channel of NVK Crew Members\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5\n**`nvkdiscord`**: Link Of NVK Discord")
 @bot.command()
 async def nvkyt():
           await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK厶Noah :__**\nhttps://www.youtube.com/channel/UC_9XSNPo8OPDgjhiEu9nKXA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/w7VDRZ5")
 @bot.command()
 async def nvkdiscord():
-          await bot.say("```**__The Link Of NepViking's Discord Is :__**\n\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("```**__The Link Of NepViking's Discord Is :__**\n\nhttps://discord.gg/w7VDRZ5```")
           
 bot.run(os.environ['BOT_TOKEN'])
