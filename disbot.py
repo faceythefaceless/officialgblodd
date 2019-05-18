@@ -285,5 +285,8 @@ async def praise(ctx, member: discord.Member):
                                  "Everything seems brighter when you are around :8ball:",
                                  "You really seem to know who you are. I admire that. :8ball:",
                                  "I tell everyone how amazing you are. :8ball:"]))
-          
+@bot.command()
+async def helpme():
+    await bot.say("**Mr.Noah** is Now Telling You The Requirements to join NepVikings(NVK) CLAN!.\n__**Requirements:**__\")
+                  
 bot.run(os.environ['BOT_TOKEN'])
