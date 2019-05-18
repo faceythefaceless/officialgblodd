@@ -289,4 +289,8 @@ async def praise(ctx, member: discord.Member):
 async def requirements():
     await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\nWe Need Players Who Prefer Team Kills Over Solo Kills.\nYou Can Also Post Your Stats If It Doesn't Meets The Requirements.\nIf It Meets The Requirements Surely Post Your Stats In The Specific Section.\nIf Your Gameplay Is Solo Dont Bother Applying.\n\nYou May Also DM :\n**__Mr.Alex__**\n**__Mr.Prerak__**\n\n**__For More Info You May Join Our Discord Server:__**\n\nhttps://discord.gg/w7VDRZ5\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n**`Behaviour`**: Respectful , Loyal\n**`Activeness`**: Should Be Active Consistently")
 
+@bot.command()
+async def roster():
+          await bot.say("```The following are the members of NepVikings (NVK) :- \n01. NVKムMETALHEAD(Leadwe)\n02. NVKムAlex\n03. NVKムBhupoo\n04. NVKムNishant69\n05. NVKムPrerak\n06. NVKムCaptain\n07. NVKムAdolfin\n08. NVKムPRABAL\n09. NVKムSaniz\n10. NVKムNithean\n11. NVKムSarvesh\n12. NVKムMilann\n13. NVKムpraJWaL\n14. NVKムHellRaiser \n15. NVKムHuncho```")
+          
 bot.run(os.environ['BOT_TOKEN'])
