@@ -74,7 +74,7 @@ async def on_message(message):
             msg_to_send = 10
             while msg_to_send > 0:
                 msg_to_send = msg_to_send - 1
-                msg = '''I am Gorkhali Blood Bot.'''.format(message)
+                msg = '''I am Mr.Noah.'''.format(message)
                 await bot.send_message(message.channel, msg)
                 await asyncio.sleep(1)
             return
@@ -103,8 +103,8 @@ async def on_message(message):
         if 'playlist' in message.content.lower():
             msg = '**Global Top 50:** https://www.youtube.com/playlist?list=PL8cV2deJEZLGsrT9z5wq101gnXXvwrSwe\n**Spanish:** https://www.youtube.com/playlist?list=PL8cV2deJEZLH3MqOgKunS4IqHtjgORutm'.format(message)
             await bot.send_message(message.channel, msg)
-        if 'gender' in message.content.lower():
-            msg = 'Sorry {0.author.mention}, I am a bot. '.format(message)
+        if 'geet sunne' in message.content.lower():
+            msg = 'Paak, {0.author.mention}, Ma Tori Haru Sanga Geet Sundina :joy:. '.format(message)
             await bot.send_message(message.channel, msg)
         if 'k cha' in message.content.lower():
             msg = 'thik xa {0.author.mention}, tmro k xa? '.format(message)
