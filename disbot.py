@@ -16,10 +16,9 @@ from random import randint
 from discord import Permissions
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix=('gblood ', '-'),
-          description= 'Hi I am **Gorkhali Bot**!\n\n**Gorkhali Blodd** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/U9VcvHp')
+bot = commands.Bot(command_prefix=('nvk! ', 'noah!'),
+          description= 'Hi I am **Mr.Noah**!\n\n**Mr.Noah** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5')
                    
-
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
 
@@ -43,7 +42,7 @@ async def on_message(message):
         await bot.send_message(message.channel, msg)
 
     if 'who are you' in message.content.lower():
-        msg = 'I am Gorkhali Blood Bot.'.format(message)
+        msg = 'I am Mr.Noah.'.format(message)
         await bot.send_message(message.channel, msg)
     
     if 'good afternoon' in message.content.lower():
@@ -158,7 +157,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Gorkhali Bot** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/U9VcvHp\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User\n**`-praise <member mention>`**: Praises a User")
+    await bot.say("**Mr.Noah** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User\n**`-praise <member mention>`**: Praises a User")
 
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
