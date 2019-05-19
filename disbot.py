@@ -17,7 +17,7 @@ from discord import Permissions
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix=('nvk! ', 'n$'),
-          description= 'Hi I am **Mr.Noah**!\n\n**Mr.Noah** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5')
+          description= 'Hi I am **Mr.Noah**!\n\n**Mr.Noah** can talk to you!\nIt greets new users.\n\n**Discord Support Server**__\nhttps://discord.gg/Ap4dSNY')
                    
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
@@ -157,7 +157,7 @@ async def on_member_remove(member):
                     
 @bot.command()
 async def helpme():
-    await bot.say("**Mr.Noah** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/w7VDRZ5\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User\n**`-praise <member mention>`**: Praises a User")
+    await bot.say("**Mr.Noah** can talk to you! It can send a message on user join or leave to a text channel which contains 'welcome'. It also sends a welcome Direct Message to the user. It also assigns the users with role 'Gorkhalis' if the role already exists.\n\n__**Discord Support Server**__\nhttps://discord.gg/Ap4dSNY\n\n__**Commands:**__\n**`-greet <mentiom user>`**: Greets user\n**`-punch <mention user>`**: Punches a User\n**`-coinflip`**: does a coinflip \n**`-jiugare <mention user>`**: Gives Respect To the user (Nepali language)\n**`-kiss <mention user>`**: kisses a user\n**`-hug <member mention>`**: Hugs A User\n**`-slap <member mention>`**: Slaps A User\n**`-headpat <member mention>`**: Headpats A User\n**`-stare <member mention>`**: Stares At The User\n**`-love <member mention>`**: Says I love You\n**`-marry <mention user>`**: Get Married With A User\n**`-dumb <member mention>`**: Says Dumb To A User\n**`-ashirwad <member mention>`**: Get Ashirwad from user\n**`-qball <question>`**: Answers a Question Given By The User\n**`-pranam <member nebtion>`**: Gives Pranam To A User\n**`-insult <member mention>`**: Insults a User\n**`-praise <member mention>`**: Praises a User")
 
 @bot.command(pass_context=True)
 async def greet(ctx, member: discord.Member):
@@ -287,7 +287,7 @@ async def praise(ctx, member: discord.Member):
                                  "I tell everyone how amazing you are. :8ball:"]))
 @bot.command()
 async def requirements():
-    await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\nWe Need Players Who Prefer Team Kills Over Solo Kills.\nYou Can Also Post Your Stats If It Doesn't Meets The Requirements.\nIf It Meets The Requirements Surely Post Your Stats In The Specific Section.\nIf Your Gameplay Is Solo Dont Bother Applying.\n\nYou May Also DM :\n**__Mr.Alex__**\n**__Mr.Prerak__**\n\n**__For More Info You May Join Our Discord Server:__**\n\nhttps://discord.gg/w7VDRZ5\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n**`Behaviour`**: Respectful , Loyal\n**`Activeness`**: Should Be Active Consistently")
+    await bot.say("**Mr.Noah** Is Telling You The Requirements to join NepVikings(NVK).\nWe Need Players Who Prefer Team Kills Over Solo Kills.\nYou Can Also Post Your Stats If It Doesn't Meets The Requirements.\nIf It Meets The Requirements Surely Post Your Stats In The Specific Section.\nIf Your Gameplay Is Solo Dont Bother Applying.\n\nYou May Also DM :\n**__Mr.Alex__**\n**__Mr.Prerak__**\n\n**__For More Info You May Join Our Discord Server:__**\n\nhttps://discord.gg/Ap4dSNY\n\n__**Requirements:**__\n**`Region`**: Asia\n**`Tier`**: Ace\n**`Platform`**: Mobile\n**`KD`**: Minimum 5 or 5+\n**`Level`**: 45+\n**`Microphone`**: Mandatory\n**`Behaviour`**: Respectful , Loyal\n**`Activeness`**: Should Be Active Consistently")
 
 @bot.command()
 async def roster():
@@ -297,10 +297,10 @@ async def nvkhelp():
           await bot.say("**Mr.Noah** Is Showing You The Commands Of NepVikings.\n\n**__NepVikings Commands:__**\n**`requirements`**: Shows Requirements Of NepViking Crew\n**`roster`**: Shows The Roster Of NepVikings Crew\n**`nvkhelp`**: Shows help Command of NepVikings\n**`nvkyt`**: Shows The Youtube Channel of NVK Crew Members\n\n**__Discord Support Server__**\nhttps://discord.gg/w7VDRZ5\n**`nvkdiscord`**: Link Of NVK Discord")
 @bot.command()
 async def nvkyt():
-          await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK厶Noah :__**\nhttps://www.youtube.com/channel/UC_9XSNPo8OPDgjhiEu9nKXA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("**__Youtube Channels Of NVK Crew Members:__**\n\n**__NVK厶Alex :__**\nhttps://www.youtube.com/channel/UCPbEh3fsfJcMef6wibbdpnA\n\n**__NVK厶Prerak :__**\nhttps://www.youtube.com/channel/UCKCB-sihIJ64ntu7t0v2NCA\n\n**__NVK厶Noah :__**\nhttps://www.youtube.com/channel/UC_9XSNPo8OPDgjhiEu9nKXA\n\n**__NVK Discord Support Server:__**\nhttps://discord.gg/Ap4dSNY")
 @bot.command()
 async def nvkdiscord():
-          await bot.say("**__Mr.Noah__**\n**__Invites You To Join NepVikings!__**\n**__The Whole Server Is Waiting For You :tada:__**\n\n**__The Link Of NepViking's Discord Is :__**\n\nhttps://discord.gg/w7VDRZ5")
+          await bot.say("**__Mr.Noah__**\n**__Invites You To Join NepVikings!__**\n**__The Whole Server Is Waiting For You :tada:__**\n\n**__The Link Of NepViking's Discord Is :__**\n\nhttps://discord.gg/Ap4dSNY")
 @bot.command()
 async def rules():
           await bot.say("```1. Do not advertise, promote to, or solicit members on this server in any way. If you want to promote, it should be in a specific channel.\n\n2. Do not ask for roles.\n\n3. Do not backseat moderate.\n\n4. Do not disrespect any member.\n\n5. Do not excessively mention anyone or roles.\n\n6. Do not excessively use vulgar language.\n\n7. Do not exploit any bugs or issues with any bots on the server.\n\n8. Do not mention any mentionable roles.\n\n9. Do not post NSFW or NSFL content.\n\n10. Do not post misleading messages.\n\n11. Do not spam.\n\n12. Do not disturb Members.\n\n**If it's urgent, contact an online Admin**\n\nIf you break any of the rules,\nyou may be warned,\nkicked or banned without the opportunity of appeal,\nat the discretion of our moderators and managers.\nAppeals are only granted on a case-by-case basis to users who are wrongfully banned,\nas determined in our administrators' sole discretion.\n\n@NVKムCommunity```")
